@@ -4,7 +4,7 @@ metadata:
   name: upload-play-app
   namespace: upload-play-infra-example
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: upload-play-app
