@@ -7,7 +7,7 @@ spec:
   selector:
     app: upload-play-app
   ports:
-    - port: 80
+    - port: 3001
       protocol: TCP
-      targetPort: 80
+      targetPort: 3001
       nodePort: 31000
