@@ -16,15 +16,24 @@ spec:
       containers:
         - name: upload-play-app
           image: julesl123/fabstir-upload-play-example:095de6eb57030c494def8b806e890e1f3dea00d5
-          imagePullPolicy: Always
           ports:
             - containerPort: 3001
           env:
-            - name: DATABASE_URL
+            - name: PORTAL_URL
               valueFrom:
                 secretKeyRef:
                   name: my-secret
-                  key: DATABASE_URL
+                  key: PORTAL_URL
+            - name: TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: TOKEN
+            - name: TRANSCODER_URL
+              valueFrom:
+                secretKeyRef:
+                  name: my-secret
+                  key: TRANSCODER_URL
           volumeMounts:
             - name: secrets
               mountPath: "/var/run/secrets/my-secret"
