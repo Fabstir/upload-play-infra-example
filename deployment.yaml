@@ -17,4 +17,4 @@ spec:
           image: julesl123/fabstir-upload-play-example
           imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 3001
