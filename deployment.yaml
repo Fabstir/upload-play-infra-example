@@ -34,6 +34,8 @@ spec:
                 secretKeyRef:
                   name: my-secret
                   key: TRANSCODER_URL
+            - name: TRANSCODE_APP_ENDPOINT
+              value: transcode-app.transcode-infra-example.svc.cluster.local:50051
           volumeMounts:
             - name: secrets
               mountPath: "/var/run/secrets/my-secret"
