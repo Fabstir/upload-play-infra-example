@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: upload-play-app
-          image: julesl123/fabstir-upload-play-example:00090f885cd9dd9bf7818ad656c0730dd9e6c341
+          image: julesl123/fabstir-upload-play-example:27b92178fe407942358c96589f0366f26f09af5d
           ports:
             - containerPort: 3001
           env:
