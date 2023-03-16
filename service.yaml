@@ -11,7 +11,3 @@ spec:
       protocol: TCP
       targetPort: 3001
       nodePort: 31000
-  externalTrafficPolicy: Local
-  endpoints:
-  - name: transcode-app
-    port: grpc
