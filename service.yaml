@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: upload-play-app
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: upload-play-app
   ports:
